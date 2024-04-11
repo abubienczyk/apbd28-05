@@ -2,9 +2,18 @@ namespace REST_API.Models;
 
 public class Animal
 {
-    public int id { get; set; }
-    public string name { get; set; }
-    public string category { get; set; }
-    public double weight{ get; set; }
-    public string fur { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Category { get; set; }
+    public double Weight{ get; set; }
+    public string FurColor { get; set; }
+
+   public Animal(int id, string name, string category, double weight, string furColor)
+   {
+       Id = id;
+       Name = name;
+       Category = category;
+       Weight = weight;
+       FurColor = furColor;
+   }
 }
